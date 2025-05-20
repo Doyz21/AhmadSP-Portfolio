@@ -170,26 +170,3 @@ function downloadResume() {
   link.click();
   document.body.removeChild(link);
 }
-
-// Send Message
-document
-  .getElementById("whatsapp-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const email = document.getElementById("email").value.trim();
-
-    if (!name || !message) {
-      alert("Please fill out both name and message.");
-      return;
-    }
-
-    const whatsappNumber = "6285817718838";
-    const fullMessage = `📨 New Contact Message\n\nFull Name: ${name}\nEmail Address: ${email}\nMessage:\n${message}`;
-    const encodedMessage = encodeURIComponent(fullMessage);
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-
-    window.open(whatsappURL, "_blank");
-  });
