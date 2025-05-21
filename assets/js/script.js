@@ -164,8 +164,8 @@ window.addEventListener("click", function (event) {
 // Resume Download
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "./assets/AHMAD SAHL PAHLEVI - GenAI Specialist Resume.pdf";
-  link.download = "AHMAD SAHL PAHLEVI - GenAI Specialist Resume.pdf";
+  link.href = "./assets/AHMAD SAHL PAHLEVI - Front-End Engineer Resume.pdf";
+  link.download = "AHMAD SAHL PAHLEVI - Front-End Engineer Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
